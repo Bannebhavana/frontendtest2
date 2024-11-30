@@ -46,6 +46,47 @@ p {
     box-shadow: black;
     color: #333;
 }
+.nav {
+  display: flex;
+  gap: 20px; 
+  background-color: burlywood;
+  padding: 10px 20px;
+  border-radius: 5px; 
+}
+
+.nav a:hover {
+  color: cornflowerblue; 
+}
+
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px; 
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px; 
+}
+
+/* Responsive Design */
+@media (max-width: 100px) {
+  .gallery {
+    grid-template-columns: 1fr; 
+  }
+}
+
 </style>
 </head>
 <body>
@@ -66,5 +107,19 @@ p {
     <div class="card">
         HTML CSS
     </div>
+    <h6>4th question</h6>
+    <nav class="nav">
+        <a href="#introduction">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <h6>5th question</h6>
+      <div class="gallery">
+
+        <img src="https://images.pexels.com/photos/20189671/pexels-photo-20189671/free-photo-of-flowers-around-logo-board-near-building-wall.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" >
+           <img src="https://images.pexels.com/photos/29549363/pexels-photo-29549363/free-photo-of-vibrant-european-robin-perched-in-nature.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" >
+           <img src="https://images.pexels.com/photos/17504248/pexels-photo-17504248/free-photo-of-book-and-camera-on-picnic-blanket.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" >
+            <img src="https://images.pexels.com/photos/20881841/pexels-photo-20881841/free-photo-of-big-beautiful-flower-blooming.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+       </div>
 </body>
 </html>
