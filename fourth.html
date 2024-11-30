@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Bar</title>
+  <style>
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  height: 100px;
+  
+  background-color:lightseagreen;
+  box-sizing: border-box;
+}
+
+
+.nav {
+  display: flex;
+  gap: 20px; 
+  background-color: burlywood;
+  padding: 10px 20px;
+  border-radius: 5px; 
+}
+
+
+
+
+
+.nav a:hover {
+  color: cornflowerblue; 
+}
+
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px; 
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#introduction">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</body>
+</html>

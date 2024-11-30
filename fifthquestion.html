@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}   
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px; 
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; 
+  }
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="gallery">
+
+     <img src="https://images.pexels.com/photos/20189671/pexels-photo-20189671/free-photo-of-flowers-around-logo-board-near-building-wall.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" >
+        <img src="https://images.pexels.com/photos/29549363/pexels-photo-29549363/free-photo-of-vibrant-european-robin-perched-in-nature.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" >
+        <img src="https://images.pexels.com/photos/17504248/pexels-photo-17504248/free-photo-of-book-and-camera-on-picnic-blanket.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" >
+         <img src="https://images.pexels.com/photos/20881841/pexels-photo-20881841/free-photo-of-big-beautiful-flower-blooming.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+    </div>
+</body>
+</html>
